@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#11d452",
+                        "accent-gold": "#d4af37",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102216",
+                        "slate-custom": "#23482f",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "sans": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-custom/30 bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+<div class="flex items-center gap-10">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl">landscape</span>
+<h2 class="text-slate-100 text-xl font-bold tracking-tight">Gemilang Katun Outbound</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Programs</a>
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Batu Locations</a>
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Case Studies</a>
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">About Us</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center bg-slate-custom/40 rounded-lg px-3 py-1.5 border border-slate-custom/50">
+<span class="material-symbols-outlined text-slate-400 text-sm">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm text-slate-100 placeholder:text-slate-500 w-48" placeholder="Search insights..."/>
+</div>
+<button class="bg-primary text-background-dark px-5 py-2 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all">
+                    Get a Quote
+                </button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-b from-background-dark/40 to-background-dark/90 z-10"></div>
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Panoramic view of misty green mountains in Batu Malang" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAG0U8y6Bxl_9Ts-TMmerk-BgoBujd5dwFFWKdzbo6BlophUSRmAyi-WMZ_xijvghXPGwQWJXDA-nakYBTS0LYYM1o7V2T_yfdlvNvncugCu2MeXzzIrFasbFfE-FjtnGBT_H970V19x4J7roK4mjlYssKYemkUOOy9Cx4LdFItN7QNTcOGw_86DRpnIyrxBzjIQ78z3iOYGeCL7MCfZsrhOEHqfnF0ixx7loTMwqvYcyZfHwc7EoRv_dMXnVH7SxpHYzp2WmzwBaA');"></div>
+<div class="relative z-20 text-center px-6 max-w-4xl">
+<span class="inline-block px-4 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">Established 1998</span>
+<h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-[1.1]">Leading Through Nature</h1>
+<p class="text-lg md:text-xl text-slate-200 font-light max-w-2xl mx-auto mb-10 leading-relaxed italic">
+                    Elevating corporate leadership through immersive outdoor experiences in the heart of Batu, Malang.
+                </p>
+<button class="bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-background-dark px-8 py-3 rounded-lg font-bold transition-all uppercase text-sm tracking-wider">
+                    Explore Our Vision
+                </button>
+</div>
+</section>
+<div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
+<!-- Featured Section: Executive Insight -->
+<div class="mb-20">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-3xl font-bold text-slate-100">Executive Insight</h2>
+<div class="h-px flex-grow mx-8 bg-slate-custom/30"></div>
+<a class="text-primary text-sm font-semibold hover:underline" href="#">View All Insights</a>
+</div>
+<div class="group relative grid lg:grid-cols-2 gap-0 overflow-hidden rounded-xl border border-slate-custom/30 bg-slate-custom/10 hover:border-primary/30 transition-all duration-500">
+<div class="relative h-[400px] lg:h-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Professional team collaborating in a luxury outdoor retreat setting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBRa-h78dG_yFd1By0901xyePfCgALt-pqr-Nk-j2WzkkoRcmySOtT46MbFPhVkUUz9vmDz6rL9C3CXjEywJxTJR0v9v89VvAqqGdE4f3s9ZD6QSxIOd2bS1VTgKOUgBtI5mXKl1DLqKQB_O27UcV-MTy5NgRDUgX1658ZqFcsmiZg326vSroG4ae1Ru-JNNNoRRHOnsnSPZh89BmLrLdg_FvvY6ScKIlMO8i1s53jF29saCAQR78gnDYaJzhJDft_rO22tl05-wOk');"></div>
+</div>
+<div class="p-10 lg:p-16 flex flex-col justify-center">
+<p class="text-accent-gold font-bold text-xs uppercase tracking-widest mb-4">Featured Strategy</p>
+<h3 class="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">The Strategic Advantage of Wilderness Retreats</h3>
+<p class="text-slate-300 text-lg leading-relaxed mb-8 font-light">
+                            How natural environments foster breakthrough thinking and cohesive team dynamics for modern executives. Discover the neuroscience behind outdoor collaboration.
+                        </p>
+<div class="flex items-center gap-4 mb-10">
+<div class="size-12 rounded-full border border-primary/40 bg-cover bg-center" data-alt="Portrait of a professional corporate leadership consultant" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRXrEI1nWnd7o55jSLKfRxtwLupLafRTurvaANi7CbfD5DnIyyKp7Ak-y_W12p1E-r27PYm2sKvo140TtIKMWzCjlCbC3OHJjoWjd1JtjxOqa5JEeWy1PIXuCq2bp9NLgf18ZrdnjF3yebLAXFOQolJg--V9QBK-iPNmToe7GxpF9H0TqCLjhH-dVIZyFqcynHme3geAekPwncsi0TZsJPNgNACHwMNyvFPSkDD0EGhuLEGffMwO-lprMmmHiG50SM1wyhF2diwWA');"></div>
+<div>
+<p class="text-white font-semibold">Dr. Aris Setiawan</p>
+<p class="text-slate-400 text-xs">Director of Leadership Excellence</p>
+</div>
+</div>
+<button class="w-fit flex items-center gap-2 bg-primary text-background-dark px-6 py-3 rounded-lg font-bold hover:gap-4 transition-all">
+                            Read Full Article <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Latest Perspectives: Grid -->
+<div>
+<div class="flex items-center justify-between mb-12">
+<h2 class="text-3xl font-bold text-slate-100">Latest Perspectives</h2>
+<div class="h-px flex-grow mx-8 bg-slate-custom/30"></div>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Grid Card 1 -->
+<div class="group border border-slate-custom/30 rounded-xl overflow-hidden hover:border-primary/30 transition-all bg-slate-custom/5">
+<div class="h-64 overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Group of professionals engaged in a team building activity in the woods" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDQmrNk_LwI5zwogxT_OrzEjiOREGW1rTeN1r2WOiMOFxw4nvqudtKr8NbKizdOOGLv9foLSDSkqtAqN_PchZ2O52aqKERYA0Euo1-8kDQM8BjtL8xKfLnt3tKvDiAaIU63Ld7iEmZtlJ12Squ9ARZf3iZYrviySiPj7e84AMkTnOMzilqByKr77sjo9qTFLw0rdoe949WV9sSa9B4mMmvPTBsvotC2PjodpoCmySgzAR_T3FCuwOj69ZfwA4B4nUbDh77N03YuFLE');"></div>
+</div>
+<div class="p-8">
+<p class="text-primary font-bold text-xs uppercase tracking-widest mb-3">Team Building</p>
+<h4 class="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors">Cognitive Reframing in High-Altitude Training</h4>
+<p class="text-slate-400 text-sm leading-relaxed mb-6">Exploring how physical challenges in Batu's mountainous terrain translate to mental resilience in the boardroom.</p>
+<div class="flex items-center justify-between pt-6 border-t border-slate-custom/30">
+<span class="text-slate-500 text-xs">May 14, 2024 · 6 min read</span>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary">north_east</span>
+</div>
+</div>
+</div>
+<!-- Grid Card 2 -->
+<div class="group border border-slate-custom/30 rounded-xl overflow-hidden hover:border-primary/30 transition-all bg-slate-custom/5">
+<div class="h-64 overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Abstract view of mountains under a sunset sky" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPsVIA_53rA0TvzJYfz7XQ6YP4lGJjn-gnKzu2S5yeDVbhuZvOvSCBT72r_vo0Cpz0hCemRwc0EgjTjqbnN9Qx7NgwvCaVh0Xry0hcPvMoT2dEE28XLorGXQ_YgGExU5rHZXkRrf2NQtfJ0fGWoHLuL9klfwO7b_6yNwV_RLyfIAzBZeDwsJJhFvn3i6QzZe99qUFBVDMQZKxNU-wYRWwuRaJLlOjxjNe4m4IkRaiKYUKnqs3Twu7DsD_9WphVQ_D0wdTnV865bU4');"></div>
+</div>
+<div class="p-8">
+<p class="text-primary font-bold text-xs uppercase tracking-widest mb-3">Culture</p>
+<h4 class="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors">The Silence of the Peaks: Deep Listening for Leaders</h4>
+<p class="text-slate-400 text-sm leading-relaxed mb-6">Why true leadership communication often starts with the ability to navigate silence and reflection in nature.</p>
+<div class="flex items-center justify-between pt-6 border-t border-slate-custom/30">
+<span class="text-slate-500 text-xs">May 10, 2024 · 8 min read</span>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary">north_east</span>
+</div>
+</div>
+</div>
+<!-- Grid Card 3 -->
+<div class="group border border-slate-custom/30 rounded-xl overflow-hidden hover:border-primary/30 transition-all bg-slate-custom/5">
+<div class="h-64 overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Aerial view of a lush pine forest in Batu Malang" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-KU4CB_saBIfxJWMPmfWrbY_JQV9dnDFdALcKFk45H7cH25JAWLBlGCo7c496Ay8zshL5cr1mYJXWZnalDOv0ILjdjLsDp1hgU2yShmt8cJ54ELSMoGTy9MELHWc1iEMdRamImDnmqxsRATfDsjwI_ZD94RBS3KE-S86JC0Gd210x8Ih7wMMDxmvpW-qn32kIhrPs_fGnCMEfNAS6pcpHVe8VmMDbu6DuviGxxpIo3Q9kjYpmMo9MfInoGytJYIe19efZxkmmqUY');"></div>
+</div>
+<div class="p-8">
+<p class="text-primary font-bold text-xs uppercase tracking-widest mb-3">Case Study</p>
+<h4 class="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors">Sustainable Growth: The Eco-Leadership Model</h4>
+<p class="text-slate-400 text-sm leading-relaxed mb-6">How an FMCG giant transformed their quarterly planning using our Batu Wilderness Protocol.</p>
+<div class="flex items-center justify-between pt-6 border-t border-slate-custom/30">
+<span class="text-slate-500 text-xs">May 02, 2024 · 12 min read</span>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary">north_east</span>
+</div>
+</div>
+</div>
+<!-- Grid Card 4 -->
+<div class="group border border-slate-custom/30 rounded-xl overflow-hidden hover:border-primary/30 transition-all bg-slate-custom/5">
+<div class="h-64 overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Boardroom meeting scene with natural sunlight" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAlWCNhEwgSNxAvrKggT1_hssQWgTeTYYlpD-PAhDWzlhLoXmu1NC2rPrzqD_zmTMoAKyE_U5wLGim63zwA5szqPun7RWbACXQygpbI9d3THQP-FcolKVLDPG77_T8jIUJX8dzFKawfQxDcr6I2Whr2nogK-TDU0ChDQH-ibJnfElGcCP_MEHBgGNHI1iUyt7_V5lQnC83ebN_ccAz552tEvNl1741XNn394VUlAZVV09dVKYOYRKywat1eyrFGqk3FKb4yP5i4-Rw');"></div>
+</div>
+<div class="p-8">
+<p class="text-primary font-bold text-xs uppercase tracking-widest mb-3">Executive Well-being</p>
+<h4 class="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors">Burnout Prevention through Active Immersion</h4>
+<p class="text-slate-400 text-sm leading-relaxed mb-6">Practical steps for CEOs to maintain peak performance through structured outdoor disconnection cycles.</p>
+<div class="flex items-center justify-between pt-6 border-t border-slate-custom/30">
+<span class="text-slate-500 text-xs">April 28, 2024 · 10 min read</span>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary">north_east</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-custom/10 border-t border-slate-custom/30 py-16">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">landscape</span>
+<h2 class="text-slate-100 text-xl font-bold tracking-tight">Gemilang Katun Outbound</h2>
+</div>
+<p class="text-slate-400 max-w-sm mb-8 leading-relaxed">
+                        Indonesia's premier corporate leadership retreat provider based in Batu, Malang. We bridge the gap between human potential and natural wisdom.
+                    </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-full border border-slate-custom/50 flex items-center justify-center text-slate-400 hover:text-primary hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="size-10 rounded-full border border-slate-custom/50 flex items-center justify-center text-slate-400 hover:text-primary hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-xl">alternate_email</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Quick Links</h5>
+<ul class="space-y-4 text-sm text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Our methodology</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Batu training center</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Safety protocols</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacy policy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Subscribe</h5>
+<p class="text-sm text-slate-400 mb-4">Get the latest leadership insights monthly.</p>
+<div class="flex overflow-hidden rounded-lg border border-slate-custom/50">
+<input class="bg-transparent border-none focus:ring-0 text-sm p-3 flex-grow" placeholder="Email address" type="email"/>
+<button class="bg-primary px-4 flex items-center justify-center text-background-dark">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-custom/20 text-center text-xs text-slate-500">
+                © 2024 Gemilang Katun Outbound. All rights reserved. Professional Corporate Outbound Services in Batu, Malang.
+            </div>
+</div>
+</footer>
+</div>
+</body></html>
